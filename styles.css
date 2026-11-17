@@ -46,12 +46,12 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--plateado);outline-o
 /* ----- Sobre que se abre al tocar el sello (rosa, lila y celeste) ----- */
 .envelope{position:relative;width:min(76vw,340px);aspect-ratio:3/2;margin:22px 0 10px;perspective:1100px;animation:float 3s ease-in-out infinite;filter:drop-shadow(0 18px 26px rgba(176,80,130,.4))}
 .envelope>*{position:absolute}
-.env-back{inset:0;background:linear-gradient(#e58fb7,#d97aa8);border-radius:6px;z-index:1}
+.env-back{inset:0;background:#e48db3;border-radius:6px;z-index:1}
 .env-l,.env-r,.env-b{inset:0;z-index:3}
-.env-l{background:linear-gradient(90deg,#f8bdd6,#f0a6c8);clip-path:polygon(0 0,52% 52%,0 100%);border-radius:6px 0 0 6px}
-.env-r{background:linear-gradient(270deg,#cdb8f2,#bb9eea);clip-path:polygon(100% 0,48% 52%,100% 100%);border-radius:0 6px 6px 0}
-.env-b{background:linear-gradient(#b0dbf6,#92c8ef);clip-path:polygon(0 100%,50% 46%,100% 100%);border-radius:0 0 6px 6px}
-.env-flap{left:0;top:0;width:100%;height:56%;background:linear-gradient(#ffe3ef,#f6b3d1);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top center;z-index:5;transition:transform .9s cubic-bezier(.5,0,.2,1) .35s,background .9s .35s}
+.env-l{background:#f2a3c4;clip-path:polygon(0 0,52% 52%,0 100%);border-radius:6px 0 0 6px}
+.env-r{background:#ec98bb;clip-path:polygon(100% 0,48% 52%,100% 100%);border-radius:0 6px 6px 0}
+.env-b{background:#f6b1cd;clip-path:polygon(0 100%,50% 46%,100% 100%);border-radius:0 0 6px 6px}
+.env-flap{left:0;top:0;width:100%;height:56%;background:#f8bcd4;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top center;z-index:5;transition:transform .9s cubic-bezier(.5,0,.2,1) .35s,background .9s .35s}
 .env-letter{left:6%;right:6%;top:7%;height:88%;z-index:2;background:linear-gradient(#fff,#fff1f8);border-radius:4px;box-shadow:0 2px 8px rgba(120,50,100,.25);display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:14%;gap:4px;color:var(--azul);transition:transform 1.1s cubic-bezier(.3,.7,.2,1) 1.2s}
 .letter-small{font-family:"Cinzel","Times New Roman",serif;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase}
 .letter-name{font-family:"Allura",cursive;font-size:2.5rem;line-height:1.1;-webkit-text-stroke:.3px var(--azul)}
@@ -92,7 +92,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--plateado);outline-o
 .envelope.open{animation:none}
 .envelope.open .seal{transform:scale(1.5) rotate(12deg);opacity:0;pointer-events:none}
 .envelope.open .seal::before{animation:none}
-.envelope.open .env-flap{transform:rotateX(180deg);z-index:1;background:linear-gradient(#e89bbd,#dd86ae)}
+.envelope.open .env-flap{transform:rotateX(180deg);z-index:1;background:#e48db3}
 .envelope.open .env-letter{transform:translateY(-52%)}
 .envelope.open .env-orn::before,.envelope.open .orn-tl,.envelope.open .orn-tr{opacity:0}
 #welcome-screen.opening .nombre-img,#welcome-screen.opening .welcome-sub,#welcome-screen.opening .welcome-instruction{opacity:0;animation:none;transition:opacity .5s ease}
