@@ -30,10 +30,10 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--plateado);outline-o
    Arriba: parte de arriba de fondo-tile.jpg, que se desvanece hacia abajo.
    Centro: degradado liso (así no hay cortes ni repeticiones).
    Abajo: parte de abajo de fondo-tile.jpg, que aparece desde el degradado. */
-.marco{position:relative;background:linear-gradient(180deg,#fff1f8 0%,#f4eafd 50%,#e9f4fd 100%)}
+.marco{position:relative;background:linear-gradient(180deg,#fff8fc 0%,#fff4fa 55%,#fdeff8 100%)}
 .marco::before,.marco::after{content:"";position:absolute;left:0;width:100%;z-index:-1;pointer-events:none;background-image:url("fondo-tile.jpg");background-size:100% auto;background-repeat:no-repeat;opacity:.85}
 .marco::before{top:0;height:calc(var(--col)*1.7);background-position:top center;-webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
-.marco::after{bottom:0;height:calc(var(--col)*1.5);background-position:bottom center;-webkit-mask-image:linear-gradient(transparent,#000 45%);mask-image:linear-gradient(transparent,#000 45%)}
+.marco::after{bottom:0;height:calc(var(--col)*1.05);background-position:bottom center;-webkit-mask-image:linear-gradient(transparent,#000 45%);mask-image:linear-gradient(transparent,#000 45%)}
 
 /* ---------- 3. PANTALLA DE BIENVENIDA ---------- */
 #welcome-screen{position:fixed;inset:0;z-index:999999;display:flex;justify-content:center;align-items:stretch;text-align:center;color:var(--texto);background:linear-gradient(180deg,#fdeef6 0%,#efe3fb 100%);transition:opacity .7s ease,visibility .7s ease}
