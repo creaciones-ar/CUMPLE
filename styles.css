@@ -115,7 +115,7 @@ main#main-content > section{position:relative}
 .info-block .script-title,.rsvp-container .script-title{white-space:nowrap;line-height:1;margin-bottom:18px}
 
 /* ---------- 6. INICIO ---------- */
-.hero-section{padding-top:36px;padding-bottom:40px}
+.hero-section{padding-top:calc(var(--col)*.34);padding-bottom:40px}
 .micumple{display:block;width:min(88%,400px);height:auto;margin:0 auto 26px}
 
 .music-player{width:min(66vw,330px);margin:6px auto 24px}
